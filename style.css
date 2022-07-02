@@ -1,0 +1,143 @@
+:root {
+    --brancoPrincipal: #ffffff;
+    --cinzaSecundario: #c0c0c0;
+    --botaoAzul: #167bf7;
+    --corDeFundo: #00030C;
+    --fontePrincipal: 'Inter';
+    --botaoAzulHover: #58a3ff;
+}
+
+body {
+    background-color: var(--corDeFundo);
+    color: var(--brancoPrincipal); /* Pq color mudou a cor do H1? */
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center; /* Pois está em um grid */
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botão {
+    background-color: var(--botaoAzul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--brancoPrincipal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botão:hover {
+    background-color: var(--botaoAzulHover);
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--cinzaSecundario);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinzaSecundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--brancoPrincipal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--cinzaSecundario);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+    color: var(--brancoPrincipal);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    text-align: center;
+    margin:  10em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3em 0;   
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cinzaSecundario);
+    margin-bottom: 4em;
+}
+
+.lista__link a:hover {
+    color: var(--botaoAzul);
+}
+
